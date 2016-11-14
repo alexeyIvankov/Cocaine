@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
+		FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADB01DD9FC91001608BB /* CocaineTests.m */; };
+		FF32ADB31DD9FC91001608BB /* Cocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF32ADA51DD9FC91001608BB /* Cocaine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF32ADC21DDA003F001608BB /* DependenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBD1DDA003F001608BB /* DependenceManager.swift */; };
+		FF32ADC31DDA003F001608BB /* DependenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */; };
+		FF32ADC41DDA003F001608BB /* DependenceStorageMemoryRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */; };
+		FF32ADC51DDA003F001608BB /* IDependence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADC01DDA003F001608BB /* IDependence.swift */; };
+		FF32ADC61DDA003F001608BB /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADC11DDA003F001608BB /* Injector.swift */; };
+		FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCD1DDA039D001608BB /* AppDelegate.swift */; };
+		FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCF1DDA039D001608BB /* ViewController.swift */; };
+		FF32ADD31DDA039D001608BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD11DDA039D001608BB /* Main.storyboard */; };
+		FF32ADD51DDA039E001608BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD41DDA039E001608BB /* Assets.xcassets */; };
+		FF32ADD81DDA039E001608BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */; };
+		FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF32ADAD1DD9FC91001608BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF32AD991DD9FC91001608BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF32ADA11DD9FC91001608BB;
+			remoteInfo = Cocaine;
+		};
+		FF32ADDF1DDA039E001608BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF32AD991DD9FC91001608BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF32ADCA1DDA039D001608BB;
+			remoteInfo = CocaineExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF32ADA21DD9FC91001608BB /* Cocaine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cocaine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF32ADA51DD9FC91001608BB /* Cocaine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cocaine.h; sourceTree = "<group>"; };
+		FF32ADA61DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF32ADB01DD9FC91001608BB /* CocaineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocaineTests.m; sourceTree = "<group>"; };
+		FF32ADB21DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF32ADBD1DDA003F001608BB /* DependenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceManager.swift; sourceTree = "<group>"; };
+		FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceStorage.swift; sourceTree = "<group>"; };
+		FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceStorageMemoryRules.swift; sourceTree = "<group>"; };
+		FF32ADC01DDA003F001608BB /* IDependence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependence.swift; sourceTree = "<group>"; };
+		FF32ADC11DDA003F001608BB /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		FF32ADCB1DDA039D001608BB /* CocaineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocaineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF32ADCD1DDA039D001608BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF32ADCF1DDA039D001608BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF32ADD21DDA039D001608BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF32ADD41DDA039E001608BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF32ADD71DDA039E001608BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF32ADD91DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineExampleTests.swift; sourceTree = "<group>"; };
+		FF32ADE41DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF32AD9E1DD9FC91001608BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADA81DD9FC91001608BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADC81DDA039D001608BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADDB1DDA039E001608BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF32AD981DD9FC91001608BB = {
+			isa = PBXGroup;
+			children = (
+				FF32ADA41DD9FC91001608BB /* Cocaine */,
+				FF32ADAF1DD9FC91001608BB /* CocaineTests */,
+				FF32ADCC1DDA039D001608BB /* CocaineExample */,
+				FF32ADE11DDA039E001608BB /* CocaineExampleTests */,
+				FF32ADA31DD9FC91001608BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF32ADA31DD9FC91001608BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADA21DD9FC91001608BB /* Cocaine.framework */,
+				FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */,
+				FF32ADCB1DDA039D001608BB /* CocaineExample.app */,
+				FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF32ADA41DD9FC91001608BB /* Cocaine */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADBC1DDA003F001608BB /* dependence_manager */,
+				FF32ADC01DDA003F001608BB /* IDependence.swift */,
+				FF32ADC11DDA003F001608BB /* Injector.swift */,
+				FF32ADA51DD9FC91001608BB /* Cocaine.h */,
+				FF32ADA61DD9FC91001608BB /* Info.plist */,
+			);
+			path = Cocaine;
+			sourceTree = "<group>";
+		};
+		FF32ADAF1DD9FC91001608BB /* CocaineTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADB01DD9FC91001608BB /* CocaineTests.m */,
+				FF32ADB21DD9FC91001608BB /* Info.plist */,
+			);
+			path = CocaineTests;
+			sourceTree = "<group>";
+		};
+		FF32ADBC1DDA003F001608BB /* dependence_manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADBD1DDA003F001608BB /* DependenceManager.swift */,
+				FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */,
+				FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */,
+			);
+			path = dependence_manager;
+			sourceTree = "<group>";
+		};
+		FF32ADCC1DDA039D001608BB /* CocaineExample */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADCD1DDA039D001608BB /* AppDelegate.swift */,
+				FF32ADCF1DDA039D001608BB /* ViewController.swift */,
+				FF32ADD11DDA039D001608BB /* Main.storyboard */,
+				FF32ADD41DDA039E001608BB /* Assets.xcassets */,
+				FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */,
+				FF32ADD91DDA039E001608BB /* Info.plist */,
+			);
+			path = CocaineExample;
+			sourceTree = "<group>";
+		};
+		FF32ADE11DDA039E001608BB /* CocaineExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */,
+				FF32ADE41DDA039E001608BB /* Info.plist */,
+			);
+			path = CocaineExampleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF32AD9F1DD9FC91001608BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADB31DD9FC91001608BB /* Cocaine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF32ADA11DD9FC91001608BB /* Cocaine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF32ADB61DD9FC91001608BB /* Build configuration list for PBXNativeTarget "Cocaine" */;
+			buildPhases = (
+				FF32AD9D1DD9FC91001608BB /* Sources */,
+				FF32AD9E1DD9FC91001608BB /* Frameworks */,
+				FF32AD9F1DD9FC91001608BB /* Headers */,
+				FF32ADA01DD9FC91001608BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cocaine;
+			productName = Cocaine;
+			productReference = FF32ADA21DD9FC91001608BB /* Cocaine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF32ADAA1DD9FC91001608BB /* CocaineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF32ADB91DD9FC91001608BB /* Build configuration list for PBXNativeTarget "CocaineTests" */;
+			buildPhases = (
+				FF32ADA71DD9FC91001608BB /* Sources */,
+				FF32ADA81DD9FC91001608BB /* Frameworks */,
+				FF32ADA91DD9FC91001608BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF32ADAE1DD9FC91001608BB /* PBXTargetDependency */,
+			);
+			name = CocaineTests;
+			productName = CocaineTests;
+			productReference = FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF32ADCA1DDA039D001608BB /* CocaineExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF32ADE51DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExample" */;
+			buildPhases = (
+				FF32ADC71DDA039D001608BB /* Sources */,
+				FF32ADC81DDA039D001608BB /* Frameworks */,
+				FF32ADC91DDA039D001608BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocaineExample;
+			productName = CocaineExample;
+			productReference = FF32ADCB1DDA039D001608BB /* CocaineExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF32ADDD1DDA039E001608BB /* CocaineExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF32ADE81DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExampleTests" */;
+			buildPhases = (
+				FF32ADDA1DDA039E001608BB /* Sources */,
+				FF32ADDB1DDA039E001608BB /* Frameworks */,
+				FF32ADDC1DDA039E001608BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF32ADE01DDA039E001608BB /* PBXTargetDependency */,
+			);
+			name = CocaineExampleTests;
+			productName = CocaineExampleTests;
+			productReference = FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF32AD991DD9FC91001608BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alexey Ivankov";
+				TargetAttributes = {
+					FF32ADA11DD9FC91001608BB = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					FF32ADAA1DD9FC91001608BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					FF32ADCA1DDA039D001608BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					FF32ADDD1DDA039E001608BB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF32ADCA1DDA039D001608BB;
+					};
+				};
+			};
+			buildConfigurationList = FF32AD9C1DD9FC91001608BB /* Build configuration list for PBXProject "Cocaine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF32AD981DD9FC91001608BB;
+			productRefGroup = FF32ADA31DD9FC91001608BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF32ADA11DD9FC91001608BB /* Cocaine */,
+				FF32ADAA1DD9FC91001608BB /* CocaineTests */,
+				FF32ADCA1DDA039D001608BB /* CocaineExample */,
+				FF32ADDD1DDA039E001608BB /* CocaineExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF32ADA01DD9FC91001608BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADA91DD9FC91001608BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADC91DDA039D001608BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADD81DDA039E001608BB /* LaunchScreen.storyboard in Resources */,
+				FF32ADD51DDA039E001608BB /* Assets.xcassets in Resources */,
+				FF32ADD31DDA039D001608BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADDC1DDA039E001608BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF32AD9D1DD9FC91001608BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADC61DDA003F001608BB /* Injector.swift in Sources */,
+				FF32ADC51DDA003F001608BB /* IDependence.swift in Sources */,
+				FF32ADC31DDA003F001608BB /* DependenceStorage.swift in Sources */,
+				FF32ADC21DDA003F001608BB /* DependenceManager.swift in Sources */,
+				FF32ADC41DDA003F001608BB /* DependenceStorageMemoryRules.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADA71DD9FC91001608BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADC71DDA039D001608BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */,
+				FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32ADDA1DDA039E001608BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF32ADAE1DD9FC91001608BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF32ADA11DD9FC91001608BB /* Cocaine */;
+			targetProxy = FF32ADAD1DD9FC91001608BB /* PBXContainerItemProxy */;
+		};
+		FF32ADE01DDA039E001608BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF32ADCA1DDA039D001608BB /* CocaineExample */;
+			targetProxy = FF32ADDF1DDA039E001608BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF32ADD11DDA039D001608BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF32ADD21DDA039D001608BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF32ADD71DDA039E001608BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF32ADB41DD9FC91001608BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF32ADB51DD9FC91001608BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF32ADB71DD9FC91001608BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Cocaine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.Cocaine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF32ADB81DD9FC91001608BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Cocaine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.Cocaine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF32ADBA1DD9FC91001608BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CocaineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF32ADBB1DD9FC91001608BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CocaineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF32ADE61DDA039E001608BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocaineExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF32ADE71DDA039E001608BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocaineExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF32ADE91DDA039E001608BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocaineExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocaineExample.app/CocaineExample";
+			};
+			name = Debug;
+		};
+		FF32ADEA1DDA039E001608BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CocaineExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocaineExample.app/CocaineExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF32AD9C1DD9FC91001608BB /* Build configuration list for PBXProject "Cocaine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32ADB41DD9FC91001608BB /* Debug */,
+				FF32ADB51DD9FC91001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF32ADB61DD9FC91001608BB /* Build configuration list for PBXNativeTarget "Cocaine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32ADB71DD9FC91001608BB /* Debug */,
+				FF32ADB81DD9FC91001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF32ADB91DD9FC91001608BB /* Build configuration list for PBXNativeTarget "CocaineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32ADBA1DD9FC91001608BB /* Debug */,
+				FF32ADBB1DD9FC91001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF32ADE51DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32ADE61DDA039E001608BB /* Debug */,
+				FF32ADE71DDA039E001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF32ADE81DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF32ADE91DDA039E001608BB /* Debug */,
+				FF32ADEA1DDA039E001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF32AD991DD9FC91001608BB /* Project object */;
+}
