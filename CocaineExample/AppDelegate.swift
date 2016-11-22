@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import  Cocaine
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

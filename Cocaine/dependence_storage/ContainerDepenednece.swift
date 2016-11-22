@@ -8,15 +8,15 @@
 
 import Foundation
 
-protocol DependenceStorage
+protocol ContainerDependence
 {
 	func add(dependence:IDependence);
 	
-	subscript(name:AnyClass) ->IDependence?{ get set }
+	subscript(name:String) ->IDependence?{ get set }
 	
-	func dependence(name:AnyClass) -> IDependence?;
+	func dependence(name:String) -> IDependence?;
 	func allDependences() ->[IDependence];
 	
 	func removeAll();
-	func removeDependence(name:AnyClass);
+	func removeDependence(name:String);
 }

@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import Cocaine
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, IDependenceClient {
+    
+    
+    func injectInteractor(interactor:[String:IDependence])
+    {
+        print("123");
+    }
+    
+    public func neededDependencesForCreatingInteractor() -> [String] {
+        return [String(describing: IService1.self)];
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.injectDependences();
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

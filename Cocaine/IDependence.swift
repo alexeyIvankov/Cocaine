@@ -16,7 +16,7 @@ import Foundation
 	case singleton
 }
 
-@objc public protocol IDependence: class, AnyObject
+ @objc public protocol IDependence: class, AnyObject
 {
 	func memoryRules() -> MemoryRules;
 }

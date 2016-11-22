@@ -8,7 +8,8 @@
 
 import Foundation
 
-class DependenceStorageMemoryRules : DependenceStorage {
+class MapTableDependence : ContainerDependence
+{
 	
 	fileprivate var memoryRulesStorage:MemoryRules;
 	fileprivate let storage:NSMapTable<NSString,IDependence>;
@@ -18,7 +19,7 @@ class DependenceStorageMemoryRules : DependenceStorage {
 	init(memoryRules:MemoryRules)
 	{
 		memoryRulesStorage = memoryRules;
-        storage = NSMapTable<NSString,IDependence>(keyOptions:NSPointerFunctions.Options.copyIn, valueOptions:DependenceStorageMemoryRules.pointerFunctionsOptions(memoryRules));
+        storage = NSMapTable<NSString,IDependence>(keyOptions:NSPointerFunctions.Options.copyIn, valueOptions:MapTableDependence.pointerFunctionsOptions(memoryRules));
         lock = NSRecursiveLock();
 	}
     
@@ -44,8 +45,8 @@ class DependenceStorageMemoryRules : DependenceStorage {
         return pointerFunctionsOptions!;
     }
 
-	//MARK: IDependenceStorage
-	internal subscript(name:AnyClass) ->IDependence?
+	//MARK: ContainerDependence
+	internal subscript(name:String) ->IDependence?
     {
 		get
         {
@@ -71,12 +72,12 @@ class DependenceStorageMemoryRules : DependenceStorage {
         }
 	}
 	
-	func dependence(name: AnyClass) -> IDependence? {
+	func dependence(name: String) -> IDependence? {
 		
 		var dependence:IDependence? = nil;
         
         self.operation {
-            dependence = self.storage.object(forKey: NSString(string:String(describing: name))) as IDependence?
+            dependence = self.storage.object(forKey: NSString(string:name)) as IDependence?
         }
 		
 		return dependence;
@@ -98,11 +99,11 @@ class DependenceStorageMemoryRules : DependenceStorage {
 		return dependences;
 	}
 	
-	func removeDependence(name: AnyClass)
+	func removeDependence(name: String)
 	{
         self.operation
         {
-            self.storage.removeObject(forKey: NSString(string:String(describing: name)));
+            self.storage.removeObject(forKey: NSString(string:name));
         }
         
 	}

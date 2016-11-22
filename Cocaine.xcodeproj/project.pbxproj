@@ -10,17 +10,22 @@
 		FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
 		FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADB01DD9FC91001608BB /* CocaineTests.m */; };
 		FF32ADB31DD9FC91001608BB /* Cocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF32ADA51DD9FC91001608BB /* Cocaine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF32ADC21DDA003F001608BB /* DependenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBD1DDA003F001608BB /* DependenceManager.swift */; };
-		FF32ADC31DDA003F001608BB /* DependenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */; };
-		FF32ADC41DDA003F001608BB /* DependenceStorageMemoryRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */; };
 		FF32ADC51DDA003F001608BB /* IDependence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADC01DDA003F001608BB /* IDependence.swift */; };
-		FF32ADC61DDA003F001608BB /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADC11DDA003F001608BB /* Injector.swift */; };
 		FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCD1DDA039D001608BB /* AppDelegate.swift */; };
 		FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCF1DDA039D001608BB /* ViewController.swift */; };
 		FF32ADD31DDA039D001608BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD11DDA039D001608BB /* Main.storyboard */; };
 		FF32ADD51DDA039E001608BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD41DDA039E001608BB /* Assets.xcassets */; };
 		FF32ADD81DDA039E001608BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */; };
 		FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */; };
+		FF32AE4E1DDA2531001608BB /* Service1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32AE4D1DDA2531001608BB /* Service1.swift */; };
+		FF41E9BD1DDF1EBB0028787E /* ContainerDepenednece.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41E9BA1DDF1EBB0028787E /* ContainerDepenednece.swift */; };
+		FF41E9BE1DDF1EBB0028787E /* DependenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41E9BB1DDF1EBB0028787E /* DependenceStorage.swift */; };
+		FF41E9BF1DDF1EBB0028787E /* MapTableDependence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41E9BC1DDF1EBB0028787E /* MapTableDependence.swift */; };
+		FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */; };
+		FF9BA27D1DDF675F00A6FC83 /* DependenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BA27C1DDF675F00A6FC83 /* DependenceEngine.swift */; };
+		FF9BA2801DDF685700A6FC83 /* EventSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BA27F1DDF685700A6FC83 /* EventSender.swift */; };
+		FFDBD52D1DDF826F00EAE6BD /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBD52C1DDF826F00EAE6BD /* Builder.swift */; };
+		FFDBD5301DDF870100EAE6BD /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDBD52F1DDF870100EAE6BD /* Runtime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +52,7 @@
 		FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADB01DD9FC91001608BB /* CocaineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocaineTests.m; sourceTree = "<group>"; };
 		FF32ADB21DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF32ADBD1DDA003F001608BB /* DependenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceManager.swift; sourceTree = "<group>"; };
-		FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceStorage.swift; sourceTree = "<group>"; };
-		FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceStorageMemoryRules.swift; sourceTree = "<group>"; };
 		FF32ADC01DDA003F001608BB /* IDependence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependence.swift; sourceTree = "<group>"; };
-		FF32ADC11DDA003F001608BB /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		FF32ADCB1DDA039D001608BB /* CocaineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocaineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADCD1DDA039D001608BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF32ADCF1DDA039D001608BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,15 @@
 		FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineExampleTests.swift; sourceTree = "<group>"; };
 		FF32ADE41DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF32AE4D1DDA2531001608BB /* Service1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service1.swift; sourceTree = "<group>"; };
+		FF41E9BA1DDF1EBB0028787E /* ContainerDepenednece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerDepenednece.swift; sourceTree = "<group>"; };
+		FF41E9BB1DDF1EBB0028787E /* DependenceStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceStorage.swift; sourceTree = "<group>"; };
+		FF41E9BC1DDF1EBB0028787E /* MapTableDependence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableDependence.swift; sourceTree = "<group>"; };
+		FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceClient.swift; sourceTree = "<group>"; };
+		FF9BA27C1DDF675F00A6FC83 /* DependenceEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceEngine.swift; sourceTree = "<group>"; };
+		FF9BA27F1DDF685700A6FC83 /* EventSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSender.swift; sourceTree = "<group>"; };
+		FFDBD52C1DDF826F00EAE6BD /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		FFDBD52F1DDF870100EAE6BD /* Runtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +132,15 @@
 		FF32ADA41DD9FC91001608BB /* Cocaine */ = {
 			isa = PBXGroup;
 			children = (
-				FF32ADBC1DDA003F001608BB /* dependence_manager */,
+				FFDBD52E1DDF866900EAE6BD /* runtime */,
+				FFDBD52B1DDF826400EAE6BD /* builder */,
+				FF9BA27E1DDF684C00A6FC83 /* core */,
+				FF9BA27B1DDF674D00A6FC83 /* engine */,
+				FF41E9B91DDF1EBB0028787E /* dependence_storage */,
 				FF32ADC01DDA003F001608BB /* IDependence.swift */,
-				FF32ADC11DDA003F001608BB /* Injector.swift */,
 				FF32ADA51DD9FC91001608BB /* Cocaine.h */,
 				FF32ADA61DD9FC91001608BB /* Info.plist */,
+				FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */,
 			);
 			path = Cocaine;
 			sourceTree = "<group>";
@@ -140,19 +154,10 @@
 			path = CocaineTests;
 			sourceTree = "<group>";
 		};
-		FF32ADBC1DDA003F001608BB /* dependence_manager */ = {
-			isa = PBXGroup;
-			children = (
-				FF32ADBD1DDA003F001608BB /* DependenceManager.swift */,
-				FF32ADBE1DDA003F001608BB /* DependenceStorage.swift */,
-				FF32ADBF1DDA003F001608BB /* DependenceStorageMemoryRules.swift */,
-			);
-			path = dependence_manager;
-			sourceTree = "<group>";
-		};
 		FF32ADCC1DDA039D001608BB /* CocaineExample */ = {
 			isa = PBXGroup;
 			children = (
+				FF32AE4C1DDA2522001608BB /* test_dependence */,
 				FF32ADCD1DDA039D001608BB /* AppDelegate.swift */,
 				FF32ADCF1DDA039D001608BB /* ViewController.swift */,
 				FF32ADD11DDA039D001608BB /* Main.storyboard */,
@@ -170,6 +175,56 @@
 				FF32ADE41DDA039E001608BB /* Info.plist */,
 			);
 			path = CocaineExampleTests;
+			sourceTree = "<group>";
+		};
+		FF32AE4C1DDA2522001608BB /* test_dependence */ = {
+			isa = PBXGroup;
+			children = (
+				FF32AE4D1DDA2531001608BB /* Service1.swift */,
+			);
+			path = test_dependence;
+			sourceTree = "<group>";
+		};
+		FF41E9B91DDF1EBB0028787E /* dependence_storage */ = {
+			isa = PBXGroup;
+			children = (
+				FF41E9BA1DDF1EBB0028787E /* ContainerDepenednece.swift */,
+				FF41E9BB1DDF1EBB0028787E /* DependenceStorage.swift */,
+				FF41E9BC1DDF1EBB0028787E /* MapTableDependence.swift */,
+			);
+			path = dependence_storage;
+			sourceTree = "<group>";
+		};
+		FF9BA27B1DDF674D00A6FC83 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BA27C1DDF675F00A6FC83 /* DependenceEngine.swift */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		FF9BA27E1DDF684C00A6FC83 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FF9BA27F1DDF685700A6FC83 /* EventSender.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		FFDBD52B1DDF826400EAE6BD /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBD52C1DDF826F00EAE6BD /* Builder.swift */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		FFDBD52E1DDF866900EAE6BD /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				FFDBD52F1DDF870100EAE6BD /* Runtime.swift */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,11 +402,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF32ADC61DDA003F001608BB /* Injector.swift in Sources */,
+				FF41E9BD1DDF1EBB0028787E /* ContainerDepenednece.swift in Sources */,
+				FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */,
 				FF32ADC51DDA003F001608BB /* IDependence.swift in Sources */,
-				FF32ADC31DDA003F001608BB /* DependenceStorage.swift in Sources */,
-				FF32ADC21DDA003F001608BB /* DependenceManager.swift in Sources */,
-				FF32ADC41DDA003F001608BB /* DependenceStorageMemoryRules.swift in Sources */,
+				FF41E9BF1DDF1EBB0028787E /* MapTableDependence.swift in Sources */,
+				FFDBD5301DDF870100EAE6BD /* Runtime.swift in Sources */,
+				FF41E9BE1DDF1EBB0028787E /* DependenceStorage.swift in Sources */,
+				FF9BA27D1DDF675F00A6FC83 /* DependenceEngine.swift in Sources */,
+				FF9BA2801DDF685700A6FC83 /* EventSender.swift in Sources */,
+				FFDBD52D1DDF826F00EAE6BD /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */,
+				FF32AE4E1DDA2531001608BB /* Service1.swift in Sources */,
 				FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +709,7 @@
 				FF32ADB81DD9FC91001608BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF32ADB91DD9FC91001608BB /* Build configuration list for PBXNativeTarget "CocaineTests" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +718,7 @@
 				FF32ADBB1DD9FC91001608BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF32ADE51DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExample" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +727,7 @@
 				FF32ADE71DDA039E001608BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF32ADE81DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +736,7 @@
 				FF32ADEA1DDA039E001608BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
