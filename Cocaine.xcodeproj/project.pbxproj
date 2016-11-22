@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */; };
 		FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
 		FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADB01DD9FC91001608BB /* CocaineTests.m */; };
 		FF32ADB31DD9FC91001608BB /* Cocaine.h in Headers */ = {isa = PBXBuildFile; fileRef = FF32ADA51DD9FC91001608BB /* Cocaine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cocaine.podspec; sourceTree = "<group>"; };
 		FF32ADA21DD9FC91001608BB /* Cocaine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cocaine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADA51DD9FC91001608BB /* Cocaine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cocaine.h; sourceTree = "<group>"; };
 		FF32ADA61DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		FF32AD981DD9FC91001608BB = {
 			isa = PBXGroup;
 			children = (
+				FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */,
 				FF32ADA41DD9FC91001608BB /* Cocaine */,
 				FF32ADAF1DD9FC91001608BB /* CocaineTests */,
 				FF32ADCC1DDA039D001608BB /* CocaineExample */,
@@ -368,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
