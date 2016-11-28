@@ -19,11 +19,5 @@ import Foundation
  @objc public protocol IDependence: class, AnyObject
 {
 	func memoryRules() -> MemoryRules;
-}
-
-internal extension IDependence
-{
-    func key() -> String{
-        return String(describing: type(of:self))
-    }
+    func key() -> String;
 }
