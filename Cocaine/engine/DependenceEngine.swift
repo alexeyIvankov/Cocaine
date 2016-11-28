@@ -26,11 +26,11 @@ public class DependenceEngine
         self.eventSender.subscribe(subscriber: subscriber, typeEvent: typeEvent);
     }
     
-    func unsubscribe(subscriber:IDependenceClient, typeEvent:String){
+    public func unsubscribe(subscriber:IDependenceClient, typeEvent:String){
         self.eventSender.unsubscribe(subscriber: subscriber, typeEvent: typeEvent);
     }
     
-    func inject(client:IDependenceClient)
+    public func inject(client:IDependenceClient)
     {
         let neededDependences =  client.neededDependencesForCreatingInteractor()
         var interactor:[String:IDependence] = [:]
@@ -49,11 +49,11 @@ public class DependenceEngine
     }
     
     
-    func dependence(name:String) -> IDependence? {
+    public func dependence(name:String) -> IDependence? {
         return self.storage.dependence(name: name);
     }
     
-    func load(dependence:IDependence)
+    public func load(dependence:IDependence)
     {
         self.storage.add(dependence: dependence);
         let subscribers:[IDependenceClient]? = self.eventSender.subscribers(typeEvent: dependence.key()) as? [IDependenceClient]
