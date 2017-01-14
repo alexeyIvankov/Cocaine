@@ -10,13 +10,6 @@ import Foundation
 
 public protocol IDependenceClient : class
 {
-    func neededDependencesForCreatingInteractor() -> [String]
-    func injectInteractor(interactor:[String:IDependence]);
-}
-
-extension IDependenceClient
-{
-     func inject(dependence:IDependence){
-    
-    }
+    func needed_dependences() -> [DependenceMetaInfo];
+    func inject_dependences(dependences:[String:IDependence]);
 }
