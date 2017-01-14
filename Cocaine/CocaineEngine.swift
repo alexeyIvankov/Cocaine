@@ -56,14 +56,20 @@ public class CocaineEngine
         client.inject_dependences(dependences: dependences);
     }
     
-    public func load(dependence:IDependence)
-    {
+    public func load(dependence:IDependence){
         self.dependences_storage.add(object: dependence, key: dependence.key);
     }
     
-    public func load(builder:IBuilder)
-    {
+    public func load(builder:IBuilder){
         self.builders_storage.add(object: builder, key: builder.key);
+    }
+    
+    public func dependence(key:String) -> IDependence?{
+        return self.dependences_storage.object(key: key);
+    }
+    
+    public func builder(key:String) -> IBuilder?{
+        return self.builders_storage.object(key: key);
     }
     
 }

@@ -24,6 +24,7 @@
 		FF92E0E71E2A6CA20042951A /* DependenceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E21E2A6CA20042951A /* DependenceMetaInfo.swift */; };
 		FF92E0E81E2A6CA20042951A /* IStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E41E2A6CA20042951A /* IStorage.swift */; };
 		FF92E0E91E2A6CA20042951A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E51E2A6CA20042951A /* Storage.swift */; };
+		FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0EA1E2A70040042951A /* CocaineEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		FF92E0E21E2A6CA20042951A /* DependenceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceMetaInfo.swift; sourceTree = "<group>"; };
 		FF92E0E41E2A6CA20042951A /* IStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStorage.swift; sourceTree = "<group>"; };
 		FF92E0E51E2A6CA20042951A /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		FF92E0EA1E2A70040042951A /* CocaineEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocaineEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		FF32ADA41DD9FC91001608BB /* Cocaine */ = {
 			isa = PBXGroup;
 			children = (
+				FF92E0EA1E2A70040042951A /* CocaineEngine.swift */,
 				FF92E0DE1E2A6CA20042951A /* core */,
 				FF32ADA61DD9FC91001608BB /* Info.plist */,
 				FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */,
@@ -394,6 +397,7 @@
 				FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */,
 				FF92E0DB1E2A63320042951A /* IBuilder.swift in Sources */,
 				FF92E0E61E2A6CA20042951A /* EventSender.swift in Sources */,
+				FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */,
 				FF92E0E71E2A6CA20042951A /* DependenceMetaInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
