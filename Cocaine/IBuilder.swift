@@ -12,5 +12,12 @@ import Foundation
     
     var key:String { get }
     
-    func build_dependence() -> IDependence;
+    func build_dependence(pr1:AnyObject? ,
+                          pr2:AnyObject?,
+                          pr3:AnyObject?,
+                          pr4:AnyObject?,
+                          pr5:AnyObject?,
+                          pr6:AnyObject?,
+                          pr7:AnyObject?,
+                          pr8:AnyObject?) -> IDependence?;
 }

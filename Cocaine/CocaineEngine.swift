@@ -46,7 +46,7 @@ public class CocaineEngine
             else if meta.load_type == DependenceMetaInfo.LoadType.build_new
             {
                 let builder = self.builders_storage.object(key: meta.key);
-                dependence = builder?.build_dependence();
+                dependence = builder?.build_dependence(pr1: meta.pr1, pr2: meta.pr2, pr3: meta.pr3, pr4: meta.pr4, pr5: meta.pr5, pr6: meta.pr6, pr7: meta.pr7, pr8: meta.pr8)
             }
             
             if dependence != nil{
