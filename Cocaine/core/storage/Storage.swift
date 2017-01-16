@@ -8,17 +8,27 @@
 
 import Foundation
 
+
+
 class Storage<T:AnyObject>: IStorage
 {
-    private var storage:[String:T];
+    private var storage:NSMapTable<NSString, T>!
     fileprivate let lock:NSRecursiveLock
     
     typealias TypeObject = T
     
-    required init()
+    required init(memory_rules:DependenceMetaInfo.MemoryRules)
     {
-        storage = [:]
         lock = NSRecursiveLock();
+        
+        if memory_rules == DependenceMetaInfo.MemoryRules.strong
+        {
+            storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.strongMemory)
+        }
+        else if memory_rules == DependenceMetaInfo.MemoryRules.weak
+        {
+            storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.weakMemory)
+        }
     }
     
     
@@ -26,8 +36,8 @@ class Storage<T:AnyObject>: IStorage
     
     func add(object:T, key:String)
     {
-        self.thread_save_operation { 
-            self.storage[key] = object;
+        self.thread_save_operation {
+            self.storage.setObject(object, forKey: NSString(string:key));
         }
     }
     
@@ -36,7 +46,7 @@ class Storage<T:AnyObject>: IStorage
         var object:T? = nil;
         
         self.thread_save_operation { 
-            object = self.storage[key]
+            object = self.storage.object(forKey: NSString(string:key))
         }
         
         return object;
@@ -44,8 +54,8 @@ class Storage<T:AnyObject>: IStorage
     
     func remove(key:String)
     {
-        self.thread_save_operation { 
-             self.storage.removeValue(forKey: key)
+        self.thread_save_operation {
+            self.storage.removeObject(forKey:  NSString(string:key))
         }
     }
     
@@ -55,9 +65,13 @@ class Storage<T:AnyObject>: IStorage
         
         self.thread_save_operation
         {
-            for (_, value) in  self.storage
+            let object_enumerator = self.storage.objectEnumerator()
+            
+            while let object = object_enumerator?.nextObject()
             {
-                all_objects.append(value);
+                if object is T {
+                    all_objects.append(object as! T);
+                }
             }
         }
         
