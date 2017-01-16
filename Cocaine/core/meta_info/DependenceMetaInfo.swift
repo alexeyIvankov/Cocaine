@@ -33,7 +33,7 @@ public class DependenceMetaInfo
     public init(key:String,
                 create_type:CreateType,
                 memory_rules:MemoryRules,
-                parametrs:Parametrs)
+                parametrs:Parametrs?)
     {
         self.key = key;
         self.create_type = create_type;
