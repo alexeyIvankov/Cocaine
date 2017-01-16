@@ -55,7 +55,10 @@ public class CocaineEngine
                     if dependence == nil
                     {
                         dependence = self.build_dependence(meta_info: meta_info);
-                        self.dependences_storage_strong.add(object: dependence!, key: meta_info.key)
+                        
+                        if dependence != nil{
+                            self.dependences_storage_strong.add(object: dependence!, key: meta_info.key)
+                        }
                     }
                 }
                 else if meta_info.memory_rules == DependenceMetaInfo.MemoryRules.weak
@@ -65,7 +68,11 @@ public class CocaineEngine
                     if dependence == nil
                     {
                         dependence = self.build_dependence(meta_info: meta_info);
-                        self.dependences_storage_weak.add(object: dependence!, key: meta_info.key)
+                        
+                        if dependence != nil {
+                            self.dependences_storage_weak.add(object: dependence!, key: meta_info.key)
+                        }
+                        
                     }
                 }
             }

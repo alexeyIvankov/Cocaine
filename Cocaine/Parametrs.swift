@@ -12,11 +12,11 @@ public struct Parametrs
 {
     private var parametrs:[String:AnyObject] = [:]
     
-    mutating func set_parametr<T>(name:String, parametr:T){
+    public mutating func set_parametr<T>(name:String, parametr:T){
         self.parametrs[name] = parametr as AnyObject?;
     }
     
-    func get_parametr<T>(name:String) -> T?{
+    public func get_parametr<T>(name:String) -> T?{
         return self.parametrs[name] as? T;
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol IDependence {
+@objc public protocol IDependence : class {
     
     var key:String { get }
 }

@@ -187,6 +187,7 @@
 		FF92E0DE1E2A6CA20042951A /* core */ = {
 			isa = PBXGroup;
 			children = (
+				FFC9E5C21E2CC7A30065AA2A /* extensions */,
 				FF92E0DF1E2A6CA20042951A /* event_sender */,
 				FF92E0E11E2A6CA20042951A /* meta_info */,
 				FF92E0E31E2A6CA20042951A /* storage */,
@@ -217,6 +218,13 @@
 				FF92E0E51E2A6CA20042951A /* Storage.swift */,
 			);
 			path = storage;
+			sourceTree = "<group>";
+		};
+		FFC9E5C21E2CC7A30065AA2A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
