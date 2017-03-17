@@ -8,7 +8,11 @@
 
 import Foundation
 
-
+public enum StorageMemoryPolicy
+{
+    case Weak
+    case Strong
+}
 
 class Storage<T:AnyObject>: IStorage
 {
@@ -17,15 +21,15 @@ class Storage<T:AnyObject>: IStorage
     
     typealias TypeObject = T
     
-    required init(memory_rules:DependenceMetaInfo.MemoryRules)
+    required init(memoryPolicy:StorageMemoryPolicy)
     {
         lock = NSRecursiveLock();
         
-        if memory_rules == DependenceMetaInfo.MemoryRules.strong
+        if memoryPolicy == StorageMemoryPolicy.Strong
         {
             storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.strongMemory)
         }
-        else if memory_rules == DependenceMetaInfo.MemoryRules.weak
+        else if memoryPolicy == StorageMemoryPolicy.Weak
         {
             storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.weakMemory)
         }
@@ -36,7 +40,7 @@ class Storage<T:AnyObject>: IStorage
     
     func add(object:T, key:String)
     {
-        self.thread_save_operation {
+        self.threadSaveOperation {
             self.storage.setObject(object, forKey: NSString(string:key));
         }
     }
@@ -45,7 +49,7 @@ class Storage<T:AnyObject>: IStorage
         
         var object:T? = nil;
         
-        self.thread_save_operation { 
+        self.threadSaveOperation {
             object = self.storage.object(forKey: NSString(string:key))
         }
         
@@ -54,7 +58,7 @@ class Storage<T:AnyObject>: IStorage
     
     func remove(key:String)
     {
-        self.thread_save_operation {
+        self.threadSaveOperation {
             self.storage.removeObject(forKey:  NSString(string:key))
         }
     }
@@ -63,7 +67,7 @@ class Storage<T:AnyObject>: IStorage
     {
         var all_objects:[T] = [];
         
-        self.thread_save_operation
+        self.threadSaveOperation
         {
             let object_enumerator = self.storage.objectEnumerator()
             
@@ -78,10 +82,10 @@ class Storage<T:AnyObject>: IStorage
         return all_objects;
     }
     
-    func thread_save_operation(block:()->Void)
+    func threadSaveOperation(block:()->Void)
     {
         self.lock.lock();
-        block();
+            block();
         self.lock.unlock();
     }
 }

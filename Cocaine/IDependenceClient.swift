@@ -10,6 +10,6 @@ import Foundation
 
 public protocol IDependenceClient : class
 {
-    func meta_info_dependences() -> [DependenceMetaInfo];
-    func inject_dependences(dependences:[String:IDependence]);
+    func identifiersRequiredDependencies() -> [String];
+    func injectDependences(dependences:[String:AnyObject]);
 }

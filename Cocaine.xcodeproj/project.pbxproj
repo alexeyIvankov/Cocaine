@@ -18,14 +18,11 @@
 		FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */; };
 		FF32AE4E1DDA2531001608BB /* Service1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32AE4D1DDA2531001608BB /* Service1.swift */; };
 		FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */; };
-		FF92E0DD1E2A6ADE0042951A /* IDependence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0DC1E2A6ADE0042951A /* IDependence.swift */; };
-		FF92E0E61E2A6CA20042951A /* EventSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E01E2A6CA20042951A /* EventSender.swift */; };
-		FF92E0E71E2A6CA20042951A /* DependenceMetaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E21E2A6CA20042951A /* DependenceMetaInfo.swift */; };
-		FF92E0E81E2A6CA20042951A /* IStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E41E2A6CA20042951A /* IStorage.swift */; };
-		FF92E0E91E2A6CA20042951A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0E51E2A6CA20042951A /* Storage.swift */; };
 		FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0EA1E2A70040042951A /* CocaineEngine.swift */; };
-		FFF69EE51E2CA29D0084FBA7 /* IDependenceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69EE41E2CA29D0084FBA7 /* IDependenceTemplate.swift */; };
-		FFF69EE71E2CA6740084FBA7 /* Parametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF69EE61E2CA6740084FBA7 /* Parametrs.swift */; };
+		FFE64DE61E7C9508000FE1FD /* IDependenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE64DE51E7C9508000FE1FD /* IDependenceProvider.swift */; };
+		FFE64DEA1E7C9694000FE1FD /* CocaineTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE64DE71E7C9694000FE1FD /* CocaineTypes.swift */; };
+		FFE64DEB1E7C9694000FE1FD /* IStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE64DE81E7C9694000FE1FD /* IStorage.swift */; };
+		FFE64DEC1E7C9694000FE1FD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE64DE91E7C9694000FE1FD /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,14 +61,11 @@
 		FF32ADE41DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF32AE4D1DDA2531001608BB /* Service1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service1.swift; sourceTree = "<group>"; };
 		FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceClient.swift; sourceTree = "<group>"; };
-		FF92E0DC1E2A6ADE0042951A /* IDependence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependence.swift; sourceTree = "<group>"; };
-		FF92E0E01E2A6CA20042951A /* EventSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSender.swift; sourceTree = "<group>"; };
-		FF92E0E21E2A6CA20042951A /* DependenceMetaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceMetaInfo.swift; sourceTree = "<group>"; };
-		FF92E0E41E2A6CA20042951A /* IStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStorage.swift; sourceTree = "<group>"; };
-		FF92E0E51E2A6CA20042951A /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		FF92E0EA1E2A70040042951A /* CocaineEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocaineEngine.swift; sourceTree = "<group>"; };
-		FFF69EE41E2CA29D0084FBA7 /* IDependenceTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceTemplate.swift; sourceTree = "<group>"; };
-		FFF69EE61E2CA6740084FBA7 /* Parametrs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parametrs.swift; sourceTree = "<group>"; };
+		FFE64DE51E7C9508000FE1FD /* IDependenceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceProvider.swift; sourceTree = "<group>"; };
+		FFE64DE71E7C9694000FE1FD /* CocaineTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocaineTypes.swift; sourceTree = "<group>"; };
+		FFE64DE81E7C9694000FE1FD /* IStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStorage.swift; sourceTree = "<group>"; };
+		FFE64DE91E7C9694000FE1FD /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +127,13 @@
 		FF32ADA41DD9FC91001608BB /* Cocaine */ = {
 			isa = PBXGroup;
 			children = (
+				FFE64DE71E7C9694000FE1FD /* CocaineTypes.swift */,
+				FFE64DE81E7C9694000FE1FD /* IStorage.swift */,
+				FFE64DE91E7C9694000FE1FD /* Storage.swift */,
 				FF92E0EA1E2A70040042951A /* CocaineEngine.swift */,
-				FF92E0DE1E2A6CA20042951A /* core */,
 				FF32ADA61DD9FC91001608BB /* Info.plist */,
 				FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */,
-				FF92E0DC1E2A6ADE0042951A /* IDependence.swift */,
-				FFF69EE41E2CA29D0084FBA7 /* IDependenceTemplate.swift */,
-				FFF69EE61E2CA6740084FBA7 /* Parametrs.swift */,
+				FFE64DE51E7C9508000FE1FD /* IDependenceProvider.swift */,
 			);
 			path = Cocaine;
 			sourceTree = "<group>";
@@ -182,49 +176,6 @@
 				FF32AE4D1DDA2531001608BB /* Service1.swift */,
 			);
 			path = test_dependence;
-			sourceTree = "<group>";
-		};
-		FF92E0DE1E2A6CA20042951A /* core */ = {
-			isa = PBXGroup;
-			children = (
-				FFC9E5C21E2CC7A30065AA2A /* extensions */,
-				FF92E0DF1E2A6CA20042951A /* event_sender */,
-				FF92E0E11E2A6CA20042951A /* meta_info */,
-				FF92E0E31E2A6CA20042951A /* storage */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		FF92E0DF1E2A6CA20042951A /* event_sender */ = {
-			isa = PBXGroup;
-			children = (
-				FF92E0E01E2A6CA20042951A /* EventSender.swift */,
-			);
-			path = event_sender;
-			sourceTree = "<group>";
-		};
-		FF92E0E11E2A6CA20042951A /* meta_info */ = {
-			isa = PBXGroup;
-			children = (
-				FF92E0E21E2A6CA20042951A /* DependenceMetaInfo.swift */,
-			);
-			path = meta_info;
-			sourceTree = "<group>";
-		};
-		FF92E0E31E2A6CA20042951A /* storage */ = {
-			isa = PBXGroup;
-			children = (
-				FF92E0E41E2A6CA20042951A /* IStorage.swift */,
-				FF92E0E51E2A6CA20042951A /* Storage.swift */,
-			);
-			path = storage;
-			sourceTree = "<group>";
-		};
-		FFC9E5C21E2CC7A30065AA2A /* extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,15 +353,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF92E0DD1E2A6ADE0042951A /* IDependence.swift in Sources */,
-				FF92E0E91E2A6CA20042951A /* Storage.swift in Sources */,
-				FF92E0E81E2A6CA20042951A /* IStorage.swift in Sources */,
+				FFE64DEA1E7C9694000FE1FD /* CocaineTypes.swift in Sources */,
+				FFE64DE61E7C9508000FE1FD /* IDependenceProvider.swift in Sources */,
 				FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */,
-				FFF69EE71E2CA6740084FBA7 /* Parametrs.swift in Sources */,
-				FF92E0E61E2A6CA20042951A /* EventSender.swift in Sources */,
+				FFE64DEB1E7C9694000FE1FD /* IStorage.swift in Sources */,
 				FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */,
-				FFF69EE51E2CA29D0084FBA7 /* IDependenceTemplate.swift in Sources */,
-				FF92E0E71E2A6CA20042951A /* DependenceMetaInfo.swift in Sources */,
+				FFE64DEC1E7C9694000FE1FD /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
