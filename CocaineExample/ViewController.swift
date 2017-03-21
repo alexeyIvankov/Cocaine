@@ -11,30 +11,22 @@ import Cocaine
 
 class ViewController: UIViewController, IDependenceClient {
     
+    var logger: ILogger!
     
-    func injectInteractor(interactor:[String:IDependence])
-    {
-        print("123");
+    //MARK: Внедряем зависимости
+    func identifiersRequiredDependencies() -> [String] {
+        return [String(describing: ILogger.self)]
     }
     
-    public func neededDependencesForCreatingInteractor() -> [String] {
-        return [String(describing: IService1.self)];
+    func injectDependences(dependences:[String:AnyObject]) {
+        logger = dependences[String(describing: ILogger.self)] as! ILogger
     }
     
+    //MARK: Используем зависимости
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.injectDependences();
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        logger.log("I'm here!")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

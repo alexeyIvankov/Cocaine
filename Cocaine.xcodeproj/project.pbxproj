@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBF484631E81183E00A742A7 /* ILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF484621E81183E00A742A7 /* ILogger.swift */; };
+		DBF484651E81184800A742A7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF484641E81184800A742A7 /* Logger.swift */; };
+		DBF484691E811A7400A742A7 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF484681E811A7400A742A7 /* DependencyProvider.swift */; };
+		DBF4846B1E811B7600A742A7 /* DependenceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF4846A1E811B7600A742A7 /* DependenceCore.swift */; };
+		DBF4846E1E811C8B00A742A7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF4846D1E811C8B00A742A7 /* NavigationController.swift */; };
 		FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */; };
 		FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
 		FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADB01DD9FC91001608BB /* CocaineTests.m */; };
@@ -16,7 +21,6 @@
 		FF32ADD51DDA039E001608BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD41DDA039E001608BB /* Assets.xcassets */; };
 		FF32ADD81DDA039E001608BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */; };
 		FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */; };
-		FF32AE4E1DDA2531001608BB /* Service1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32AE4D1DDA2531001608BB /* Service1.swift */; };
 		FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */; };
 		FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF92E0EA1E2A70040042951A /* CocaineEngine.swift */; };
 		FFE64DE61E7C9508000FE1FD /* IDependenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE64DE51E7C9508000FE1FD /* IDependenceProvider.swift */; };
@@ -43,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DBF484621E81183E00A742A7 /* ILogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILogger.swift; sourceTree = "<group>"; };
+		DBF484641E81184800A742A7 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DBF484681E811A7400A742A7 /* DependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		DBF4846A1E811B7600A742A7 /* DependenceCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceCore.swift; sourceTree = "<group>"; };
+		DBF4846D1E811C8B00A742A7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cocaine.podspec; sourceTree = "<group>"; };
 		FF32ADA21DD9FC91001608BB /* Cocaine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cocaine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADA61DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +68,6 @@
 		FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineExampleTests.swift; sourceTree = "<group>"; };
 		FF32ADE41DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF32AE4D1DDA2531001608BB /* Service1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service1.swift; sourceTree = "<group>"; };
 		FF8C12E81DDE0343008CD961 /* IDependenceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceClient.swift; sourceTree = "<group>"; };
 		FF92E0EA1E2A70040042951A /* CocaineEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocaineEngine.swift; sourceTree = "<group>"; };
 		FFE64DE51E7C9508000FE1FD /* IDependenceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceProvider.swift; sourceTree = "<group>"; };
@@ -101,6 +109,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBF484601E8117B700A742A7 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				FF32ADCD1DDA039D001608BB /* AppDelegate.swift */,
+				FF32ADD41DDA039E001608BB /* Assets.xcassets */,
+				FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */,
+				FF32ADD91DDA039E001608BB /* Info.plist */,
+			);
+			name = support;
+			sourceTree = "<group>";
+		};
+		DBF484611E8117DE00A742A7 /* story */ = {
+			isa = PBXGroup;
+			children = (
+				DBF484661E8118FB00A742A7 /* dependencies */,
+				DBF484671E81190700A742A7 /* dependencies_provider */,
+				FF32ADD11DDA039D001608BB /* Main.storyboard */,
+				FF32ADCF1DDA039D001608BB /* ViewController.swift */,
+				DBF4846D1E811C8B00A742A7 /* NavigationController.swift */,
+			);
+			name = story;
+			sourceTree = "<group>";
+		};
+		DBF484661E8118FB00A742A7 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				DBF484621E81183E00A742A7 /* ILogger.swift */,
+				DBF484641E81184800A742A7 /* Logger.swift */,
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		DBF484671E81190700A742A7 /* dependencies_provider */ = {
+			isa = PBXGroup;
+			children = (
+				DBF484681E811A7400A742A7 /* DependencyProvider.swift */,
+			);
+			name = dependencies_provider;
+			sourceTree = "<group>";
+		};
+		DBF4846C1E811B8000A742A7 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				DBF4846A1E811B7600A742A7 /* DependenceCore.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
 		FF32AD981DD9FC91001608BB = {
 			isa = PBXGroup;
 			children = (
@@ -150,13 +206,9 @@
 		FF32ADCC1DDA039D001608BB /* CocaineExample */ = {
 			isa = PBXGroup;
 			children = (
-				FF32AE4C1DDA2522001608BB /* test_dependence */,
-				FF32ADCD1DDA039D001608BB /* AppDelegate.swift */,
-				FF32ADCF1DDA039D001608BB /* ViewController.swift */,
-				FF32ADD11DDA039D001608BB /* Main.storyboard */,
-				FF32ADD41DDA039E001608BB /* Assets.xcassets */,
-				FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */,
-				FF32ADD91DDA039E001608BB /* Info.plist */,
+				DBF484611E8117DE00A742A7 /* story */,
+				DBF4846C1E811B8000A742A7 /* core */,
+				DBF484601E8117B700A742A7 /* support */,
 			);
 			path = CocaineExample;
 			sourceTree = "<group>";
@@ -168,14 +220,6 @@
 				FF32ADE41DDA039E001608BB /* Info.plist */,
 			);
 			path = CocaineExampleTests;
-			sourceTree = "<group>";
-		};
-		FF32AE4C1DDA2522001608BB /* test_dependence */ = {
-			isa = PBXGroup;
-			children = (
-				FF32AE4D1DDA2531001608BB /* Service1.swift */,
-			);
-			path = test_dependence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,7 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */,
-				FF32AE4E1DDA2531001608BB /* Service1.swift in Sources */,
+				DBF4846B1E811B7600A742A7 /* DependenceCore.swift in Sources */,
+				DBF484691E811A7400A742A7 /* DependencyProvider.swift in Sources */,
+				DBF484651E81184800A742A7 /* Logger.swift in Sources */,
+				DBF484631E81183E00A742A7 /* ILogger.swift in Sources */,
+				DBF4846E1E811C8B00A742A7 /* NavigationController.swift in Sources */,
 				FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
