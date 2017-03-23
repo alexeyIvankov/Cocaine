@@ -7,7 +7,9 @@
 //
 
 import XCTest
+import Cocaine
 @testable import CocaineExample
+@testable import Cocaine
 
 class CocaineExampleTests: XCTestCase {
     

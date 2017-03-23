@@ -9,23 +9,28 @@
 import UIKit
 import Cocaine
 
-class ViewController: UIViewController, IDependenceClient {
-    
-    
-    func injectInteractor(interactor:[String:IDependence])
+class ViewController: UIViewController, IDependenceClient
+{
+    weak var service1:ITestService1?;
+    weak var service2:ITestService2?;
+   
+    public func injectDependences(dependences: [String : AnyObject])
     {
-        print("123");
+        self.service1 = dependences[String(describing: ITestService1.self)] as? ITestService1;
+        self.service2 = dependences[String(describing: ITestService2.self)] as? ITestService2;
     }
-    
-    public func neededDependencesForCreatingInteractor() -> [String] {
-        return [String(describing: IService1.self)];
+
+    public func identifiersRequiredDependencies() -> [String] {
+        return [String(describing: ITestService1.self), String(describing: ITestService2.self)];
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.injectDependences();
-        
+        injectClient(dependenceClient: self);
+    
+        print(self.service1);
+        print(self.service2)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

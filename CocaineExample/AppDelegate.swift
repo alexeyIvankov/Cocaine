@@ -15,9 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+    {
+        TestDependenceProvider.loadDependences();
+        
+        let service2builder:Service2DependenceBuilder = Service2DependenceBuilder(param1: "123", param2: "123")
+        service2builder.buildAndLoad();
+        
         return true
     }
 
