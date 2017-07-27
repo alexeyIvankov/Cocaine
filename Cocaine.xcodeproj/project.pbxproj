@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119A92281F2A0021009EABBB /* DependenceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A92271F2A0021009EABBB /* DependenceCore.swift */; };
 		FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */; };
 		FF2F36C81E829F770027CAC8 /* IDependenceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36C71E829F770027CAC8 /* IDependenceBuilder.swift */; };
 		FF2F36CD1E82A9990027CAC8 /* ITestService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36CC1E82A9990027CAC8 /* ITestService1.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		119A92271F2A0021009EABBB /* DependenceCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenceCore.swift; sourceTree = "<group>"; };
 		FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cocaine.podspec; sourceTree = "<group>"; };
 		FF2F36C71E829F770027CAC8 /* IDependenceBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDependenceBuilder.swift; sourceTree = "<group>"; };
 		FF2F36CC1E82A9990027CAC8 /* ITestService1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITestService1.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE64DE71E7C9694000FE1FD /* CocaineTypes.swift */,
+				119A92271F2A0021009EABBB /* DependenceCore.swift */,
 				FFE64DE81E7C9694000FE1FD /* IStorage.swift */,
 				FFE64DE91E7C9694000FE1FD /* Storage.swift */,
 				FF92E0EA1E2A70040042951A /* CocaineEngine.swift */,
@@ -423,6 +426,7 @@
 				FFE64DEA1E7C9694000FE1FD /* CocaineTypes.swift in Sources */,
 				FFE64DE61E7C9508000FE1FD /* IDependenceProvider.swift in Sources */,
 				FF2F36C81E829F770027CAC8 /* IDependenceBuilder.swift in Sources */,
+				119A92281F2A0021009EABBB /* DependenceCore.swift in Sources */,
 				FF8C12E91DDE0343008CD961 /* IDependenceClient.swift in Sources */,
 				FFE64DEB1E7C9694000FE1FD /* IStorage.swift in Sources */,
 				FF92E0EB1E2A70040042951A /* CocaineEngine.swift in Sources */,
