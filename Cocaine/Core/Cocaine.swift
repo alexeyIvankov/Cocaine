@@ -8,32 +8,15 @@
 
 import Foundation
 
-public class Cocaine : CocaineDirector,  Registrator, Injector
+public class Cocaine : I_Cocaine
 {
-    lazy var registrator: Registrator = self
-    lazy var injector: Injector = self
+    public let registrator: I_Registrator
+    public let injector: I_Injector
     
-    private lazy var containerManager = ContainersManager();
-    
-    //MARK: Registrator
-    public func register<T: AnyObject>(_ build:()->T, memoryPolicy: DependenceMemoryPolicy = DependenceMemoryPolicy.Strong){
-        let instance = build()
-        let key = String(describing: instance.self)
-        containerManager.load(dependence: instance, key: key, memoryRules: memoryPolicy)
-    }
-    
-    public func register<T: AnyObject>(key:String, _ build:()->T, memoryPolicy: DependenceMemoryPolicy = DependenceMemoryPolicy.Strong){
-        let instance = build()
-        containerManager.load(dependence: instance, key: key, memoryRules: memoryPolicy)
-    }
-    
-    //MARK: Injector
-    public func inject<T>() -> T! {
-        let key = String(describing: T.self)
-        return containerManager.dependence(key: key) as? T
-    }
-    
-    public func inject(key:String) -> AnyObject? {
-        return containerManager.dependence(key: key)
+    required public init(registrator:I_Registrator,
+                         injector:I_Injector) {
+        
+        self.registrator = registrator
+        self.injector = injector
     }
 }
