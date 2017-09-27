@@ -8,33 +8,31 @@
 
 import Foundation
 
-public enum StorageMemoryPolicy
-{
-    case Weak
-    case Strong
-}
-
-class Storage<T:AnyObject>: IStorage
+class Container<T:AnyObject>: I_Container
 {
     private var storage:NSMapTable<NSString, T>!
     fileprivate let lock:NSRecursiveLock
     
     typealias TypeObject = T
     
-    required init(memoryPolicy:StorageMemoryPolicy)
+    public enum MemoryPolicy {
+        case Weak
+        case Strong
+    }
+    
+    required init(memoryPolicy: MemoryPolicy)
     {
         lock = NSRecursiveLock();
         
-        if memoryPolicy == StorageMemoryPolicy.Strong
+        if memoryPolicy == MemoryPolicy.Strong
         {
             storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.strongMemory)
         }
-        else if memoryPolicy == StorageMemoryPolicy.Weak
+        else if memoryPolicy == MemoryPolicy.Weak
         {
             storage = NSMapTable(keyOptions: NSPointerFunctions.Options.copyIn, valueOptions: NSPointerFunctions.Options.weakMemory)
         }
     }
-    
     
     //MARK: IDependenceStorage
     
