@@ -1,22 +1,67 @@
 //
-//  DependenceCore.swift
+//  Cocaine.swift
 //  Cocaine
 //
-//  Created by Nikita on 27.07.17.
+//  Created by Alexey Ivankov on 27.09.17.
 //  Copyright © 2017 Alexey Ivankov. All rights reserved.
 //
 
 import Foundation
 
-public class Cocaine : I_Cocaine
+
+class Cocaine : I_Cocaine
 {
-    public let registrator: I_Registrator
-    public let injector: I_Injector
+    private var assemblys:Dictionary<String, I_Assembly>
+    private var dependences:Container<AnyObject>
     
-    required public init(registrator:I_Registrator,
-                         injector:I_Injector) {
+    required public init(){
         
-        self.registrator = registrator
-        self.injector = injector
+        assemblys = Dictionary<String, I_Assembly>()
+        dependences =  Container<AnyObject>(memoryPolicy: Container.MemoryPolicy.Strong)
+    }
+    
+    //Registrator
+    
+    func prepareToInject(assembly:I_Assembly){
+        
+        let buildType:AnyClass = assembly.buildType
+        let key:String = String(describing: buildType)
+        assemblys[key] = assembly
+        
+        if assembly.isLazy == false {
+            dependences.add(object: assembly.build(), key: String(describing: assembly.buildType))
+        }
+    }
+    
+    //MARK: Inject
+    
+    func inject<T>() -> T!{
+        
+        let key = String (describing: T.self)
+        return inject(key: key) as! T
+    }
+    
+    func inject(key:String) -> AnyObject?{
+        
+        var instance:AnyObject? = nil
+        let assembly:I_Assembly = self.assemblys[key]!
+        
+        if assembly.scope == .Rebuild {
+            
+            instance = assembly.build()
+            dependences.add(object: instance as AnyObject, key: key)
+        }
+        else if assembly.scope == .Singleton {
+            
+            instance = self.dependences.object(key: key)
+            
+            if instance == nil {
+                
+                instance = assembly.build()
+                dependences.add(object: instance as AnyObject, key: key)
+            }
+        }
+        
+        return instance
     }
 }
