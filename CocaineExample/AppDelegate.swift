@@ -10,17 +10,17 @@ import UIKit
 import  Cocaine
 
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var testService1:ITestService1 = inject()
+    var testService2:ITestService2 = inject()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
-        TestDependenceProvider.loadDependences();
+        print(testService1)
+        print(testService2.param1)
         
-        let service2builder:Service2DependenceBuilder = Service2DependenceBuilder(param1: "123", param2: "123")
-        service2builder.buildAndLoad();
         
         return true
     }

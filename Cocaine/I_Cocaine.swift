@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol I_Cocaine : I_Injector, I_Registrator {
+public protocol I_Cocaine : I_Injector, I_Registrator {
     
 }

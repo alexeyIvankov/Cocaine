@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Cocaine : I_Cocaine
+public class Cocaine : I_Cocaine
 {
     private var assemblys:Dictionary<String, I_Assembly>
     private var dependences:Container<AnyObject>
@@ -22,9 +22,9 @@ class Cocaine : I_Cocaine
     
     //Registrator
     
-    func prepareToInject(assembly:I_Assembly){
+    public func prepareToInject(assembly:I_Assembly){
         
-        let buildType:AnyClass = assembly.buildType
+        let buildType:Any = assembly.buildType
         let key:String = String(describing: buildType)
         assemblys[key] = assembly
         
@@ -35,13 +35,17 @@ class Cocaine : I_Cocaine
     
     //MARK: Inject
     
-    func inject<T>() -> T!{
+    public func inject<T>() -> T?{
         
         let key = String (describing: T.self)
-        return inject(key: key) as! T
+        return inject(key: key) as? T
     }
     
-    func inject(key:String) -> AnyObject?{
+    public func inject(key:String) -> AnyObject?{
+        
+        guard self.assemblys[key] != nil else {
+            return nil
+        }
         
         var instance:AnyObject? = nil
         let assembly:I_Assembly = self.assemblys[key]!

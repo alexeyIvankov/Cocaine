@@ -10,7 +10,7 @@ import Foundation
 
 public protocol I_Injector{
     
-    func inject<T>() -> T!
+    func inject<T>() -> T?
     func inject(key:String) -> AnyObject?
     
 }

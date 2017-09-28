@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol I_Registrator {
+public protocol I_Registrator {
     
     func prepareToInject(assembly:I_Assembly)
 }

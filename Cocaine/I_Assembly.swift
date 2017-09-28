@@ -10,7 +10,7 @@ import Foundation
 
 public protocol I_Assembly  : class  {
 
-    var buildType:AnyClass { get }
+    var buildType:Any { get }
     var scope:DependenceScope { get }
     var isLazy:Bool { get }
     
