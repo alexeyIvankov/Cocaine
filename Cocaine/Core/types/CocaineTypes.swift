@@ -8,9 +8,9 @@
 
 import Foundation
 
-public enum DependenceScope
+public enum MemoryPolicy
 {
-    case Singleton
-    case Rebuild
+    case Strong
+    case Weak
 }
 
