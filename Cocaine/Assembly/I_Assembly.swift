@@ -11,6 +11,8 @@ import Foundation
 public protocol I_Assembly  : class  {
 
     var buildType:Any { get }
+    var memoryPolicy:MemoryPolicy { get }
+    var instanceScope:InstanceScope { get }
  
     func build() -> AnyObject
 }
