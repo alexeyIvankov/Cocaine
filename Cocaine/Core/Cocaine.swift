@@ -8,11 +8,10 @@
 
 import Foundation
 
-public class Cocaine : I_Cocaine, I_Register, I_Injector, I_Tester
+public class Cocaine : I_Cocaine, I_Register, I_Injector
 {
     lazy public var register:I_Register = self
     lazy public var injector:I_Injector = self
-    lazy public var tester:I_Tester = self
     
     private var assemblys:Dictionary<String, I_Assembly>
     private var strongDependences:Container<AnyObject>
@@ -39,10 +38,20 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector, I_Tester
     
     //MARK: - Registrator
     
-    public func register(assembly:I_Assembly){
+    public func register(assembly:I_Assembly) throws {
         
         let buildType:Any = assembly.buildType
         let key:String = String(describing: buildType)
+        
+        let currentAssembly = assemblys[key]
+        
+        if currentAssembly != nil{
+            
+            if currentAssembly!.instanceScope == .Singleton {
+                throw CocaineErrors.SingletonRegistered
+            }
+        }
+        
         assemblys[key] = assembly
     }
     
@@ -50,13 +59,7 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector, I_Tester
     
     public func inject<T>() -> T? {
         
-        let key = String (describing: T.self)
-        var instance = dependence(key: key)
-        return instance as? T
-    }
-    
-    public func buildAndInject<T>(memoryPolicy:MemoryPolicy) -> T? {
-        
+        var instance:AnyObject?
         let key = String (describing: T.self)
         
         guard self.assemblys[key] != nil else {
@@ -64,48 +67,34 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector, I_Tester
         }
         
         let assembly:I_Assembly = self.assemblys[key]!
-        let instance:T?
         
-        instance = assembly.build() as? T
-        
-        guard instance != nil else {
-            return nil
+        if assembly.instanceScope == .New {
+            instance = assembly.build() 
+        }
+        else if assembly.instanceScope == .Singleton {
+            
+            instance = dependence(key: key)
+            
+            if instance == nil {
+                instance = assembly.build()
+            }
+            
+            load(instance: instance!, key: key, memoryPolicy: assembly.memoryPolicy)
         }
         
-        let dependence:AnyObject? = instance as AnyObject
+        return instance as? T
+    }
+    
+    private func load(instance:AnyObject, key:String, memoryPolicy:MemoryPolicy){
         
-        guard dependence != nil else {
-            return nil
+        if  memoryPolicy == .Strong {
+            strongDependences.add(object: instance, key: key)
+        }
+        else if memoryPolicy == .Weak {
+            weakDependences.add(object: instance, key: key)
         }
         
-      
-        if memoryPolicy == .Strong{
-            strongDependences.add(object: dependence!, key: key)
-        }
-        else if memoryPolicy == .Weak{
-            weakDependences.add(object: dependence!, key: key)
-        }
-        
-        
-        return instance
     }
     
-    //MARK: - Test
-    
-    public func add(test:I_CocaineTest, key:String){
-        
-    }
-    
-    public func test(key:String) -> I_CocaineTest?{
-        return nil
-    }
-    
-    public func remove(test:I_CocaineTest, key:String){
-        
-    }
-    
-    public func removeAllTests(){
-        
-    }
     
 }

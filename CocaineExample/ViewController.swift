@@ -11,8 +11,8 @@ import Cocaine
 
 class ViewController: UIViewController
 {
-    weak var service1:ITestService1?;
-    weak var service2:ITestService2?;
+    weak var service1:ITestService1? = inject()
+    weak var service2:ITestService2? = inject()
    
 
     override func viewDidLoad() {

@@ -9,40 +9,49 @@
 /* Begin PBXBuildFile section */
 		FF00374B1F7BEF2600BF11BF /* Cocaine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00374A1F7BEF2600BF11BF /* Cocaine.swift */; };
 		FF00375F1F7C038300BF11BF /* I_Cocaine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00375C1F7C038200BF11BF /* I_Cocaine.swift */; };
-		FF0037621F7C03AD00BF11BF /* I_Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0037611F7C03AD00BF11BF /* I_Assembly.swift */; };
-		FF0037651F7C185300BF11BF /* AssemblyTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0037641F7C185300BF11BF /* AssemblyTemplate.swift */; };
-		FF0037671F7CFFBC00BF11BF /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0037661F7CFFBC00BF11BF /* Application.swift */; };
 		FF0037691F7D005E00BF11BF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0037681F7D005E00BF11BF /* main.swift */; };
 		FF00376B1F7D04DD00BF11BF /* DICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00376A1F7D04DD00BF11BF /* DICore.swift */; };
-		FF00376F1F7E736D00BF11BF /* I_CocaineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF00376E1F7E736D00BF11BF /* I_CocaineTest.swift */; };
 		FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */; };
 		FF2AF7621F790A4600E2CAA0 /* CocaineTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2AF75E1F790A4600E2CAA0 /* CocaineTypes.swift */; };
 		FF2F36CD1E82A9990027CAC8 /* ITestService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36CC1E82A9990027CAC8 /* ITestService1.swift */; };
 		FF2F36CF1E82A9A30027CAC8 /* ITestService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36CE1E82A9A30027CAC8 /* ITestService2.swift */; };
 		FF2F36D11E82A9AD0027CAC8 /* TestService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36D01E82A9AD0027CAC8 /* TestService1.swift */; };
 		FF2F36D31E82A9B60027CAC8 /* TestService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F36D21E82A9B60027CAC8 /* TestService2.swift */; };
-		FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
-		FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADB01DD9FC91001608BB /* CocaineTests.m */; };
 		FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCD1DDA039D001608BB /* AppDelegate.swift */; };
 		FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADCF1DDA039D001608BB /* ViewController.swift */; };
 		FF32ADD31DDA039D001608BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD11DDA039D001608BB /* Main.storyboard */; };
 		FF32ADD51DDA039E001608BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD41DDA039E001608BB /* Assets.xcassets */; };
 		FF32ADD81DDA039E001608BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */; };
 		FF32ADE31DDA039E001608BB /* CocaineExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */; };
-		FF45D4C21F942624002ED924 /* TestTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF45D4C11F942624002ED924 /* TestTemplate.swift */; };
 		FF641EAC1F76A88300AFB2D7 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF641EA91F76A88300AFB2D7 /* Container.swift */; };
 		FF641EAE1F76A88300AFB2D7 /* I_Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF641EAB1F76A88300AFB2D7 /* I_Container.swift */; };
+		FFB69C9B1FCD33340019FC17 /* I_Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69C9A1FCD33340019FC17 /* I_Assembly.swift */; };
+		FFB69C9D1FCD33430019FC17 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69C9C1FCD33430019FC17 /* Assembly.swift */; };
+		FFB69CA01FCF52510019FC17 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69C9F1FCF52510019FC17 /* Application.swift */; };
+		FFB69CA21FCF526C0019FC17 /* I_Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69CA11FCF526C0019FC17 /* I_Application.swift */; };
+		FFB69CC11FCF65B10019FC17 /* CocaineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69CC01FCF65B10019FC17 /* CocaineTests.swift */; };
+		FFB69CC31FCF65B10019FC17 /* Cocaine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF32ADA21DD9FC91001608BB /* Cocaine.framework */; };
+		FFB69CD11FCF66840019FC17 /* TestService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69CCE1FCF66830019FC17 /* TestService1.swift */; };
+		FFB69CD21FCF66840019FC17 /* TestService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69CCF1FCF66830019FC17 /* TestService2.swift */; };
+		FFB69CD61FCF6B190019FC17 /* CocaineErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB69CD51FCF6B190019FC17 /* CocaineErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FF32ADAD1DD9FC91001608BB /* PBXContainerItemProxy */ = {
+		FF32ADDF1DDA039E001608BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF32AD991DD9FC91001608BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF32ADCA1DDA039D001608BB;
+			remoteInfo = CocaineExample;
+		};
+		FFB69CC41FCF65B10019FC17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF32AD991DD9FC91001608BB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FF32ADA11DD9FC91001608BB;
 			remoteInfo = Cocaine;
 		};
-		FF32ADDF1DDA039E001608BB /* PBXContainerItemProxy */ = {
+		FFB69CC91FCF65B60019FC17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF32AD991DD9FC91001608BB /* Project object */;
 			proxyType = 1;
@@ -54,12 +63,8 @@
 /* Begin PBXFileReference section */
 		FF00374A1F7BEF2600BF11BF /* Cocaine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocaine.swift; sourceTree = "<group>"; };
 		FF00375C1F7C038200BF11BF /* I_Cocaine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I_Cocaine.swift; sourceTree = "<group>"; };
-		FF0037611F7C03AD00BF11BF /* I_Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I_Assembly.swift; sourceTree = "<group>"; };
-		FF0037641F7C185300BF11BF /* AssemblyTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyTemplate.swift; sourceTree = "<group>"; };
-		FF0037661F7CFFBC00BF11BF /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		FF0037681F7D005E00BF11BF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FF00376A1F7D04DD00BF11BF /* DICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICore.swift; sourceTree = "<group>"; };
-		FF00376E1F7E736D00BF11BF /* I_CocaineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_CocaineTest.swift; sourceTree = "<group>"; };
 		FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cocaine.podspec; sourceTree = "<group>"; };
 		FF2AF75E1F790A4600E2CAA0 /* CocaineTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocaineTypes.swift; sourceTree = "<group>"; };
 		FF2F36CC1E82A9990027CAC8 /* ITestService1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITestService1.swift; sourceTree = "<group>"; };
@@ -68,9 +73,6 @@
 		FF2F36D21E82A9B60027CAC8 /* TestService2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService2.swift; sourceTree = "<group>"; };
 		FF32ADA21DD9FC91001608BB /* Cocaine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cocaine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADA61DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF32ADB01DD9FC91001608BB /* CocaineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocaineTests.m; sourceTree = "<group>"; };
-		FF32ADB21DD9FC91001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF32ADCB1DDA039D001608BB /* CocaineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocaineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADCD1DDA039D001608BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF32ADCF1DDA039D001608BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,9 +83,20 @@
 		FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF32ADE21DDA039E001608BB /* CocaineExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineExampleTests.swift; sourceTree = "<group>"; };
 		FF32ADE41DDA039E001608BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF45D4C11F942624002ED924 /* TestTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplate.swift; sourceTree = "<group>"; };
 		FF641EA91F76A88300AFB2D7 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		FF641EAB1F76A88300AFB2D7 /* I_Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I_Container.swift; sourceTree = "<group>"; };
+		FFB69C9A1FCD33340019FC17 /* I_Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I_Assembly.swift; sourceTree = "<group>"; };
+		FFB69C9C1FCD33430019FC17 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		FFB69C9F1FCF52510019FC17 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		FFB69CA11FCF526C0019FC17 /* I_Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Application.swift; sourceTree = "<group>"; };
+		FFB69CAF1FCF65960019FC17 /* CocaineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineTests.swift; sourceTree = "<group>"; };
+		FFB69CB11FCF65960019FC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB69CBE1FCF65B10019FC17 /* CocaineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocaineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB69CC01FCF65B10019FC17 /* CocaineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineTests.swift; sourceTree = "<group>"; };
+		FFB69CC21FCF65B10019FC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB69CCE1FCF66830019FC17 /* TestService1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService1.swift; sourceTree = "<group>"; };
+		FFB69CCF1FCF66830019FC17 /* TestService2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService2.swift; sourceTree = "<group>"; };
+		FFB69CD51FCF6B190019FC17 /* CocaineErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocaineErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF32ADA81DD9FC91001608BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF32ADAC1DD9FC91001608BB /* Cocaine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,13 +121,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFB69CBB1FCF65B10019FC17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB69CC31FCF65B10019FC17 /* Cocaine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FF0037631F7C184400BF11BF /* di */ = {
 			isa = PBXGroup;
 			children = (
-				FF0037641F7C185300BF11BF /* AssemblyTemplate.swift */,
 				FF00376A1F7D04DD00BF11BF /* DICore.swift */,
 			);
 			path = di;
@@ -168,9 +180,10 @@
 			children = (
 				FF14F4151DE48E9F00FCECF4 /* Cocaine.podspec */,
 				FF32ADA41DD9FC91001608BB /* Cocaine */,
-				FF32ADAF1DD9FC91001608BB /* CocaineTests */,
 				FF32ADCC1DDA039D001608BB /* CocaineExample */,
 				FF32ADE11DDA039E001608BB /* CocaineExampleTests */,
+				FFB69CAE1FCF65960019FC17 /* CocaineTests */,
+				FFB69CBF1FCF65B10019FC17 /* CocaineTests */,
 				FF32ADA31DD9FC91001608BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -179,9 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				FF32ADA21DD9FC91001608BB /* Cocaine.framework */,
-				FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */,
 				FF32ADCB1DDA039D001608BB /* CocaineExample.app */,
 				FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */,
+				FFB69CBE1FCF65B10019FC17 /* CocaineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,28 +202,18 @@
 		FF32ADA41DD9FC91001608BB /* Cocaine */ = {
 			isa = PBXGroup;
 			children = (
-				FF45D4BE1F942201002ED924 /* Templates */,
-				FF0037611F7C03AD00BF11BF /* I_Assembly.swift */,
+				FFB69C991FCD33340019FC17 /* Assembly */,
 				FF00375C1F7C038200BF11BF /* I_Cocaine.swift */,
-				FF00376E1F7E736D00BF11BF /* I_CocaineTest.swift */,
 				FF641E9D1F7693CF00AFB2D7 /* Core */,
 				FF32ADA61DD9FC91001608BB /* Info.plist */,
 			);
 			path = Cocaine;
 			sourceTree = "<group>";
 		};
-		FF32ADAF1DD9FC91001608BB /* CocaineTests */ = {
-			isa = PBXGroup;
-			children = (
-				FF32ADB01DD9FC91001608BB /* CocaineTests.m */,
-				FF32ADB21DD9FC91001608BB /* Info.plist */,
-			);
-			path = CocaineTests;
-			sourceTree = "<group>";
-		};
 		FF32ADCC1DDA039D001608BB /* CocaineExample */ = {
 			isa = PBXGroup;
 			children = (
+				FFB69C9E1FCF52510019FC17 /* application */,
 				FF0037631F7C184400BF11BF /* di */,
 				FF2F36C91E82A98A0027CAC8 /* services */,
 				FF32ADCD1DDA039D001608BB /* AppDelegate.swift */,
@@ -219,7 +222,6 @@
 				FF32ADD41DDA039E001608BB /* Assets.xcassets */,
 				FF32ADD61DDA039E001608BB /* LaunchScreen.storyboard */,
 				FF32ADD91DDA039E001608BB /* Info.plist */,
-				FF0037661F7CFFBC00BF11BF /* Application.swift */,
 				FF0037681F7D005E00BF11BF /* main.swift */,
 			);
 			path = CocaineExample;
@@ -234,17 +236,10 @@
 			path = CocaineExampleTests;
 			sourceTree = "<group>";
 		};
-		FF45D4BE1F942201002ED924 /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-				FF45D4C11F942624002ED924 /* TestTemplate.swift */,
-			);
-			path = Templates;
-			sourceTree = "<group>";
-		};
 		FF641E9D1F7693CF00AFB2D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FFB69CD41FCF6B0E0019FC17 /* errors */,
 				FF2AF75D1F790A4600E2CAA0 /* types */,
 				FF641EA81F76A88300AFB2D7 /* container */,
 				FF00374A1F7BEF2600BF11BF /* Cocaine.swift */,
@@ -259,6 +254,52 @@
 				FF641EAB1F76A88300AFB2D7 /* I_Container.swift */,
 			);
 			path = container;
+			sourceTree = "<group>";
+		};
+		FFB69C991FCD33340019FC17 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				FFB69C9A1FCD33340019FC17 /* I_Assembly.swift */,
+				FFB69C9C1FCD33430019FC17 /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FFB69C9E1FCF52510019FC17 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				FFB69C9F1FCF52510019FC17 /* Application.swift */,
+				FFB69CA11FCF526C0019FC17 /* I_Application.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		FFB69CAE1FCF65960019FC17 /* CocaineTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB69CCE1FCF66830019FC17 /* TestService1.swift */,
+				FFB69CCF1FCF66830019FC17 /* TestService2.swift */,
+				FFB69CAF1FCF65960019FC17 /* CocaineTests.swift */,
+				FFB69CB11FCF65960019FC17 /* Info.plist */,
+			);
+			path = CocaineTests;
+			sourceTree = "<group>";
+		};
+		FFB69CBF1FCF65B10019FC17 /* CocaineTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB69CC01FCF65B10019FC17 /* CocaineTests.swift */,
+				FFB69CC21FCF65B10019FC17 /* Info.plist */,
+			);
+			path = CocaineTests;
+			sourceTree = "<group>";
+		};
+		FFB69CD41FCF6B0E0019FC17 /* errors */ = {
+			isa = PBXGroup;
+			children = (
+				FFB69CD51FCF6B190019FC17 /* CocaineErrors.swift */,
+			);
+			path = errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,24 +332,6 @@
 			productName = Cocaine;
 			productReference = FF32ADA21DD9FC91001608BB /* Cocaine.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		FF32ADAA1DD9FC91001608BB /* CocaineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF32ADB91DD9FC91001608BB /* Build configuration list for PBXNativeTarget "CocaineTests" */;
-			buildPhases = (
-				FF32ADA71DD9FC91001608BB /* Sources */,
-				FF32ADA81DD9FC91001608BB /* Frameworks */,
-				FF32ADA91DD9FC91001608BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF32ADAE1DD9FC91001608BB /* PBXTargetDependency */,
-			);
-			name = CocaineTests;
-			productName = CocaineTests;
-			productReference = FF32ADAB1DD9FC91001608BB /* CocaineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FF32ADCA1DDA039D001608BB /* CocaineExample */ = {
 			isa = PBXNativeTarget;
@@ -345,13 +368,32 @@
 			productReference = FF32ADDE1DDA039E001608BB /* CocaineExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FFB69CBD1FCF65B10019FC17 /* CocaineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB69CC61FCF65B10019FC17 /* Build configuration list for PBXNativeTarget "CocaineTests" */;
+			buildPhases = (
+				FFB69CBA1FCF65B10019FC17 /* Sources */,
+				FFB69CBB1FCF65B10019FC17 /* Frameworks */,
+				FFB69CBC1FCF65B10019FC17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB69CC51FCF65B10019FC17 /* PBXTargetDependency */,
+				FFB69CCA1FCF65B60019FC17 /* PBXTargetDependency */,
+			);
+			name = CocaineTests;
+			productName = CocaineTests;
+			productReference = FFB69CBE1FCF65B10019FC17 /* CocaineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FF32AD991DD9FC91001608BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Alexey Ivankov";
 				TargetAttributes = {
@@ -360,16 +402,18 @@
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
-					FF32ADAA1DD9FC91001608BB = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
 					FF32ADCA1DDA039D001608BB = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 					FF32ADDD1DDA039E001608BB = {
 						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF32ADCA1DDA039D001608BB;
+					};
+					FFB69CBD1FCF65B10019FC17 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = DC7JXK236W;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FF32ADCA1DDA039D001608BB;
 					};
@@ -389,9 +433,9 @@
 			projectRoot = "";
 			targets = (
 				FF32ADA11DD9FC91001608BB /* Cocaine */,
-				FF32ADAA1DD9FC91001608BB /* CocaineTests */,
 				FF32ADCA1DDA039D001608BB /* CocaineExample */,
 				FF32ADDD1DDA039E001608BB /* CocaineExampleTests */,
+				FFB69CBD1FCF65B10019FC17 /* CocaineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,13 +446,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF14F4161DE48E9F00FCECF4 /* Cocaine.podspec in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF32ADA91DD9FC91001608BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +466,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFB69CBC1FCF65B10019FC17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,22 +480,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF00376F1F7E736D00BF11BF /* I_CocaineTest.swift in Sources */,
 				FF2AF7621F790A4600E2CAA0 /* CocaineTypes.swift in Sources */,
 				FF00375F1F7C038300BF11BF /* I_Cocaine.swift in Sources */,
-				FF45D4C21F942624002ED924 /* TestTemplate.swift in Sources */,
 				FF641EAE1F76A88300AFB2D7 /* I_Container.swift in Sources */,
-				FF0037621F7C03AD00BF11BF /* I_Assembly.swift in Sources */,
+				FFB69C9D1FCD33430019FC17 /* Assembly.swift in Sources */,
+				FFB69C9B1FCD33340019FC17 /* I_Assembly.swift in Sources */,
+				FFB69CD61FCF6B190019FC17 /* CocaineErrors.swift in Sources */,
 				FF641EAC1F76A88300AFB2D7 /* Container.swift in Sources */,
 				FF00374B1F7BEF2600BF11BF /* Cocaine.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF32ADA71DD9FC91001608BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF32ADB11DD9FC91001608BB /* CocaineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,15 +495,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0037671F7CFFBC00BF11BF /* Application.swift in Sources */,
+				FFB69CA01FCF52510019FC17 /* Application.swift in Sources */,
 				FF00376B1F7D04DD00BF11BF /* DICore.swift in Sources */,
 				FF2F36D31E82A9B60027CAC8 /* TestService2.swift in Sources */,
 				FF0037691F7D005E00BF11BF /* main.swift in Sources */,
 				FF32ADD01DDA039D001608BB /* ViewController.swift in Sources */,
-				FF0037651F7C185300BF11BF /* AssemblyTemplate.swift in Sources */,
 				FF32ADCE1DDA039D001608BB /* AppDelegate.swift in Sources */,
 				FF2F36D11E82A9AD0027CAC8 /* TestService1.swift in Sources */,
 				FF2F36CD1E82A9990027CAC8 /* ITestService1.swift in Sources */,
+				FFB69CA21FCF526C0019FC17 /* I_Application.swift in Sources */,
 				FF2F36CF1E82A9A30027CAC8 /* ITestService2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,18 +516,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFB69CBA1FCF65B10019FC17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB69CC11FCF65B10019FC17 /* CocaineTests.swift in Sources */,
+				FFB69CD21FCF66840019FC17 /* TestService2.swift in Sources */,
+				FFB69CD11FCF66840019FC17 /* TestService1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FF32ADAE1DD9FC91001608BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FF32ADA11DD9FC91001608BB /* Cocaine */;
-			targetProxy = FF32ADAD1DD9FC91001608BB /* PBXContainerItemProxy */;
-		};
 		FF32ADE01DDA039E001608BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FF32ADCA1DDA039D001608BB /* CocaineExample */;
 			targetProxy = FF32ADDF1DDA039E001608BB /* PBXContainerItemProxy */;
+		};
+		FFB69CC51FCF65B10019FC17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF32ADA11DD9FC91001608BB /* Cocaine */;
+			targetProxy = FFB69CC41FCF65B10019FC17 /* PBXContainerItemProxy */;
+		};
+		FFB69CCA1FCF65B60019FC17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF32ADCA1DDA039D001608BB /* CocaineExample */;
+			targetProxy = FFB69CC91FCF65B60019FC17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,28 +704,6 @@
 			};
 			name = Release;
 		};
-		FF32ADBA1DD9FC91001608BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = CocaineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FF32ADBB1DD9FC91001608BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = CocaineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infotechcorp.CocaineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		FF32ADE61DDA039E001608BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -735,6 +764,62 @@
 			};
 			name = Release;
 		};
+		FFB69CC71FCF65B10019FC17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DC7JXK236W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocaineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexey.CocaineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocaineExample.app/CocaineExample";
+			};
+			name = Debug;
+		};
+		FFB69CC81FCF65B10019FC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DC7JXK236W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocaineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexey.CocaineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocaineExample.app/CocaineExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,15 +841,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF32ADB91DD9FC91001608BB /* Build configuration list for PBXNativeTarget "CocaineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF32ADBA1DD9FC91001608BB /* Debug */,
-				FF32ADBB1DD9FC91001608BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FF32ADE51DDA039E001608BB /* Build configuration list for PBXNativeTarget "CocaineExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -779,6 +855,15 @@
 			buildConfigurations = (
 				FF32ADE91DDA039E001608BB /* Debug */,
 				FF32ADEA1DDA039E001608BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB69CC61FCF65B10019FC17 /* Build configuration list for PBXNativeTarget "CocaineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB69CC71FCF65B10019FC17 /* Debug */,
+				FFB69CC81FCF65B10019FC17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

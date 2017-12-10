@@ -13,6 +13,7 @@ import  Cocaine
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
     var testService1:ITestService1 = inject()
     var testService2:ITestService2 = inject()
 

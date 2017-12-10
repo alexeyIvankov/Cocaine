@@ -11,7 +11,8 @@ import UIKit
 
 public func inject<T>() -> T!{
     
-    let application:Application = UIApplication.shared as! Application
-    return application.injector.inject()
+    let application:I_Application = UIApplication.shared as! Application
+    return application.cocaine.injector.inject()
     
 }
+

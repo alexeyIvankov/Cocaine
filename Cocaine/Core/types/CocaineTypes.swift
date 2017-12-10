@@ -14,3 +14,8 @@ public enum MemoryPolicy
     case Weak
 }
 
+public enum InstanceScope
+{
+    case Singleton
+    case New
+}

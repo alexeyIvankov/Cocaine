@@ -8,13 +8,18 @@
 
 import XCTest
 import Cocaine
-@testable import CocaineExample
 @testable import Cocaine
 
 class CocaineExampleTests: XCTestCase {
     
+    //private var cocaine:I_Cocaine
+    
+    
     override func setUp() {
         super.setUp()
+        
+        //self.cocaine = Cocaine()
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
