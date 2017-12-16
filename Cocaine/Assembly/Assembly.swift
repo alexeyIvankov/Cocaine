@@ -15,12 +15,12 @@ public class Assembly : I_Assembly
     public let memoryPolicy: MemoryPolicy
     public let instanceScope: InstanceScope
     
-    let buildBlock: ()->AnyObject
+    let buildBlock: (_ injector:I_Injector)->AnyObject
     
     required public init(buildType: Any,
                          memoryPolicy: MemoryPolicy,
                          instanceScope: InstanceScope,
-                         buildBlock:  @escaping ()->AnyObject)
+                         buildBlock:  @escaping (_ injector:I_Injector)->AnyObject)
     {
         self.buildType = buildType
         self.memoryPolicy = memoryPolicy
@@ -28,7 +28,7 @@ public class Assembly : I_Assembly
         self.buildBlock = buildBlock
     }
     
-    public func build() -> AnyObject {
-        return self.buildBlock()
+    public func build(injector:I_Injector) -> AnyObject {
+        return self.buildBlock(injector)
     }
 }

@@ -69,14 +69,14 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector
         let assembly:I_Assembly = self.assemblys[key]!
         
         if assembly.instanceScope == .New {
-            instance = assembly.build() 
+            instance = assembly.build(injector:self)
         }
         else if assembly.instanceScope == .Singleton {
             
             instance = dependence(key: key)
             
             if instance == nil {
-                instance = assembly.build()
+                instance = assembly.build(injector:self)
             }
             
             load(instance: instance!, key: key, memoryPolicy: assembly.memoryPolicy)

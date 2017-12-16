@@ -31,7 +31,7 @@ class Application : UIApplication, I_Application
     {
          do
          {
-            try self.cocaine.register.register(assembly: Assembly(buildType: ITestService1.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { () -> AnyObject in
+            try self.cocaine.register.register(assembly: Assembly(buildType: ITestService1.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { (injector:I_Injector) -> AnyObject in
                 
                 return TestService1()
             }))
@@ -44,12 +44,12 @@ class Application : UIApplication, I_Application
         
         
         
-        try? self.cocaine.register.register(assembly: Assembly(buildType: ITestService1.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { () -> AnyObject in
+        try? self.cocaine.register.register(assembly: Assembly(buildType: ITestService1.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { (injector:I_Injector) -> AnyObject in
             
             return TestService1()
         }))
         
-        try? self.cocaine.register.register(assembly: Assembly(buildType: ITestService2.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { () -> AnyObject in
+        try? self.cocaine.register.register(assembly: Assembly(buildType: ITestService2.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { (injector:I_Injector) -> AnyObject in
             
             return TestService2(param1: "1", param2: "2")
         }))

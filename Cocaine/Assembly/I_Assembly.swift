@@ -14,6 +14,6 @@ public protocol I_Assembly  : class  {
     var memoryPolicy:MemoryPolicy { get }
     var instanceScope:InstanceScope { get }
  
-    func build() -> AnyObject
+    func build(injector:I_Injector) -> AnyObject
 }
 
