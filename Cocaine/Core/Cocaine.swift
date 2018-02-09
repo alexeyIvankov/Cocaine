@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol CocaineDelegate : AnyObject {
-    func assembly(key:String) -> I_Assembly?
+    func assembly() -> I_Assembly?
 }
 
 
@@ -133,10 +133,10 @@ extension Cocaine{
     internal func trySearchAssemblyFromSubscribers(key:String) -> I_Assembly?{
         var assembly:I_Assembly?
         
-        assembly = (strongObservers.object(key: key) as? CocaineDelegate)?.assembly(key: key)
+        assembly = (strongObservers.object(key: key) as? CocaineDelegate)?.assembly()
         
         if assembly == nil{
-            assembly = (weakObservers.object(key: key) as? CocaineDelegate)?.assembly(key: key)
+            assembly = (weakObservers.object(key: key) as? CocaineDelegate)?.assembly()
         }
         return assembly
     }
