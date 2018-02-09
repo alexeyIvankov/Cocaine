@@ -105,12 +105,14 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector
 extension Cocaine{
     
     public func subscribe(provider:AssemblyProvider,
-                   key:String){
-        assemblyProvier.add(object: provider, key: key)
+                   key:Any){
+        let stringKey:String = String(describing: key)
+        assemblyProvier.add(object: provider, key: stringKey)
     }
     
-    public func unsubscribe(key:String){
-        assemblyProvier.remove(key: key)
+    public func unsubscribe(key:Any){
+        let stringKey:String = String(describing: key)
+        assemblyProvier.remove(key: stringKey)
     }
 }
 

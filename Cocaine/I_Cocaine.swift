@@ -14,9 +14,9 @@ public protocol I_Cocaine  {
     var injector:I_Injector { get }
     
     func subscribe(provider:AssemblyProvider,
-                          key:String);
+                          key:Any);
     
-    func unsubscribe(key:String)
+    func unsubscribe(key:Any)
 }
 
 public protocol AssemblyProvider : AnyObject {
