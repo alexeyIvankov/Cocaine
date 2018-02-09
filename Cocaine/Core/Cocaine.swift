@@ -8,9 +8,7 @@
 
 import Foundation
 
-public protocol AssemblyProvider : AnyObject {
-    func assembly() -> I_Assembly?
-}
+
 
 public class Cocaine : I_Cocaine, I_Register, I_Injector
 {

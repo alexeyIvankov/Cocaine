@@ -12,6 +12,15 @@ public protocol I_Cocaine  {
 
     var register:I_Register { get }
     var injector:I_Injector { get }
+    
+    func subscribe(provider:AssemblyProvider,
+                          key:String);
+    
+    func unsubscribe(key:String)
+}
+
+public protocol AssemblyProvider : AnyObject {
+    func assembly() -> I_Assembly?
 }
 
 public protocol I_Injector {
