@@ -8,10 +8,9 @@
 
 import Foundation
 
-public protocol CocaineDelegate : AnyObject {
+public protocol AssemblyProvider : AnyObject {
     func assembly() -> I_Assembly?
 }
-
 
 public class Cocaine : I_Cocaine, I_Register, I_Injector
 {
@@ -22,8 +21,7 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector
     internal var strongDependences:Container<AnyObject>
     internal var weakDependences:Container<AnyObject>
     
-    internal var strongObservers:Container<AnyObject>
-    internal var weakObservers:Container<AnyObject>
+    internal var assemblyProvier:Container<AnyObject>
     
     required public init(){
         
@@ -31,8 +29,7 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector
         strongDependences =  Container<AnyObject>(memoryPolicy: Container.MemoryPolicy.Strong)
         weakDependences =  Container<AnyObject>(memoryPolicy: Container.MemoryPolicy.Weak)
         
-        strongObservers = Container<AnyObject>( memoryPolicy: Container.MemoryPolicy.Strong)
-        weakObservers = Container<AnyObject>(memoryPolicy:Container.MemoryPolicy.Weak)
+        assemblyProvier = Container<AnyObject>( memoryPolicy: Container.MemoryPolicy.Strong)
     }
     
     //MARK: - Registrator
@@ -109,21 +106,13 @@ public class Cocaine : I_Cocaine, I_Register, I_Injector
 //MARK: - Observers
 extension Cocaine{
     
-    func subscribe(observer:CocaineDelegate,
-                   key:String,
-                   memoryPolicy:MemoryPolicy){
-        
-        if memoryPolicy == .Strong{
-            strongObservers.add(object: observer, key: key)
-        }
-        else if memoryPolicy == .Weak{
-            weakObservers.add(object: observer, key: key)
-        }
+    public func subscribe(provider:AssemblyProvider,
+                   key:String){
+        assemblyProvier.add(object: provider, key: key)
     }
     
-    func unsubscribe(observer:CocaineDelegate, key:String){
-        strongObservers.remove(key: key)
-        weakObservers.remove(key: key)
+    public func unsubscribe(key:String){
+        assemblyProvier.remove(key: key)
     }
 }
 
@@ -131,20 +120,12 @@ extension Cocaine{
 extension Cocaine{
     
     internal func trySearchAssemblyFromSubscribers(key:String) -> I_Assembly?{
-        var assembly:I_Assembly?
-        
-        assembly = (strongObservers.object(key: key) as? CocaineDelegate)?.assembly()
-        
-        if assembly == nil{
-            assembly = (weakObservers.object(key: key) as? CocaineDelegate)?.assembly()
-        }
-        return assembly
+        return (assemblyProvier.object(key: key) as? AssemblyProvider)?.assembly()
     }
     
     internal func trySearchRegisterAssembly(key:String) -> I_Assembly?{
         return self.assemblys[key]
     }
-    
 }
 
 //MARK: - Dependence
