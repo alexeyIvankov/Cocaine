@@ -16,12 +16,12 @@ public protocol I_Cocaine  {
 
 public protocol I_Injector {
  
-    func inject<T>() -> T?
+    func tryInject<T>() -> T?
 }
 
 public protocol I_Register{
     
-    func register(assembly:I_Assembly) throws
+    func tryRegister(assembly:I_Assembly) throws
 }
 
 

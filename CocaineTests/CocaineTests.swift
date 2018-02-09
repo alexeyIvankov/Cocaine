@@ -38,10 +38,10 @@ class CocaineTests: XCTestCase {
 //            return TestService2()
 //        }))
         
-        let service1:I_TestService1? = cocaine.injector.inject()
+        let service1:I_TestService1? = cocaine.injector.tryInject()
         XCTAssert(service1 != nil)
         
-        let service2:I_TestService2? = cocaine.injector.inject()
+        let service2:I_TestService2? = cocaine.injector.tryInject()
         XCTAssert(service2 != nil)
         
     }
@@ -57,8 +57,8 @@ class CocaineTests: XCTestCase {
 //            return TestService2()
 //        }))
         
-        let service1_inject1:TestService1? = cocaine.injector.inject()
-        let service2_inject1:TestService2? = cocaine.injector.inject()
+        let service1_inject1:TestService1? = cocaine.injector.tryInject()
+        let service2_inject1:TestService2? = cocaine.injector.tryInject()
         
 //        cocaine.register.register(assembly: Assembly.init(buildType: I_TestService1.self, memoryPolicy: .Strong, instanceScope: .Singleton, buildBlock: { () -> AnyObject in
 //            return TestService1()
@@ -69,8 +69,8 @@ class CocaineTests: XCTestCase {
 //        }))
         
         
-        let service1_inject2:TestService1? = cocaine.injector.inject()
-        let service2_inject2:TestService2? = cocaine.injector.inject()
+        let service1_inject2:TestService1? = cocaine.injector.tryInject()
+        let service2_inject2:TestService2? = cocaine.injector.tryInject()
         
         XCTAssertEqual(service1_inject1, service1_inject2)
         XCTAssertEqual(service2_inject1, service2_inject2)

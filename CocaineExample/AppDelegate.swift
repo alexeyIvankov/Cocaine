@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var testService1:ITestService1 = inject()
-    var testService2:ITestService2 = inject()
+    var testService1:ITestService1 = tryInject()
+    var testService2:ITestService2 = tryInject()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
