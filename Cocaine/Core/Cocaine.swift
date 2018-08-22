@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 public class Cocaine : I_Cocaine, I_Register, I_Injector
 {
     lazy public var register:I_Register = self
