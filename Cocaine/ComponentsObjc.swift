@@ -9,12 +9,16 @@
 import Foundation
 
 open class AssemblyProviderImpl : NSObject, AssemblyProvider {
-    
+
     required public override init() {
         super.init()
     }
     
     open func assembly() -> I_Assembly? {
+        fatalError("ovveride this methos!")
+    }
+    
+    open func buildType() -> Any {
         fatalError("ovveride this methos!")
     }
 }
