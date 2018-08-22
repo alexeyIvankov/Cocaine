@@ -18,7 +18,7 @@ open class AssemblyProviderImpl : NSObject, AssemblyProvider {
         fatalError("ovveride this methos!")
     }
     
-    open func buildType() -> Any {
+    open class func buildType() -> Any {
         fatalError("ovveride this methos!")
     }
 }

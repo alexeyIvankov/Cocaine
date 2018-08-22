@@ -22,7 +22,7 @@ public protocol I_Cocaine  {
 public protocol AssemblyProvider : AnyObject {
     
     func assembly() -> I_Assembly?
-    func buildType()->Any
+    static func buildType()->Any
 }
 
 public protocol I_Injector {
