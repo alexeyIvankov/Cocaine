@@ -9,7 +9,7 @@
 import Foundation
 
 open class AssemblyProviderImpl : NSObject, AssemblyProvider {
-    public func assembly() -> I_Assembly? {
+    open func assembly() -> I_Assembly? {
         fatalError("ovveride this methos!")
     }
 }
