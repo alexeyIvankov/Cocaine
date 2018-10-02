@@ -19,8 +19,8 @@ class ViewController: UIViewController
         super.viewDidLoad()
        
     
-        print(self.service1);
-        print(self.service2)
+//        print(self.service1);
+//        print(self.service2)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
